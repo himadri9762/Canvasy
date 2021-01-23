@@ -1,0 +1,41 @@
+#joga{
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-right: 30px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+.lead{
+    margin-top: 20px;
+    padding-left: 30px;
+   
+    padding-right: 30px;
+    text-align: left;
+    font-family: "Times New Roman",Bell MT;
+
+}
+.featurette-heading{
+    padding-left: 50px;
+    font-family: "Times New Roman",Calisto MT;
+}
+#lead1{
+    margin-top: 0px;
+}
+#pic225{
+    margin-top: 80px;
+    
+}
+#pic556{
+    margin-top: 80px;
+    margin-left: 40px;
+    padding-left: 40px ;
+   
+}
+#pic25{
+    margin-top: 50px;
+    margin-left: 40px;
+    padding-top:0px;
+    image:inline;
+
+}

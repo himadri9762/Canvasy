@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link href="cssstyle.css" rel="stylesheet">
+
+  <title>Canvasy</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Canvasy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Service
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
+              <li><a class="dropdown-item" href="gym.html">Gym</a></li>
+              <li><a class="dropdown-item" href="fitness.html">Fitness</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="food.html">snakes and cookies </a></li>
+              <li><a class="dropdown-item" href="suppliment.html">Health and Supplements</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  
+
+<!-- Loging Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title center" id="loginModalLabel">LOG IN</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <div id="passwordHelp" class="form-text">We'll never share your password with anyone else.</div>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-outline-success">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+  <!-- Signup  Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="signupModalLabel">SIGN UP</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputname" class="form-label">name</label>
+              <input type="text" class="form-control" id="fname" >
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputmobile" class="form-label">Mobile Number</label>
+              <input type="number" class="form-control" id="mobilenum" >
+              <div>We'll never share your Mobile number with anyone else.</div>
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+              <div id="passwordHelp" class="form-text">We'll never share your password with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+              <div id="passwordHelp" class="form-text">We'll never share your password with anyone else.</div>
+            </div>
+            <button type="submit" class="btn btn-outline-success">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to canvasy</h2>
+          <p>Gym ,Yoga and BodyFitness</p>
+          <button type="button" class="btn btn-warning">GYM</button>
+          <button type="button" class="btn btn-primary">YOGA</button>
+          <button class="btn btn btn-success">FITNESS</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imgonline-com-ua-resize-KlmMJs3IpH2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Best place to fit your body and mind</h2>
+          <p>Gym ,Yoga and BodyFitness</p>
+          <button type="button" class="btn btn-warning">GYM</button>
+          <button type="button" class="btn btn-primary">YOGA</button>
+          <button class="btn btn btn-success">FITNESS</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Enjoy and fun with yoga</h2>
+          <p>Gym ,Yoga and BodyFitness</p>
+          <button type="button" class="btn btn-warning">GYM</button>
+          <button type="button" class="btn btn-primary">YOGA</button>
+          <button class="btn btn btn-success">FITNESS</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing" id="card">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row ">  
+      <div class="col-lg-4" >
+        <img class="rounded-circle" src="photo-1576511746123-831cb68bc82f.jfif" alt="Generic placeholder image"
+          width="140" height="100">
+        <h2>GYM</h2>
+      <div class="center">
+        <p>You've probably heard countless times how exercise is "good for you." But did you know that it can help you
+          feel good too? Getting the right amount of exercise can rev up your energy levels and even help improve your
+          mood.</p>
+      </div>
+        <button type="button" class="btn btn-success" href="gym.html"> Read more...</button>
+      </div><!-- /.col-lg-3 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="photo-1575052814086-f385e2e2ad1b.jfif" alt="Generic placeholder image"
+          width="140" height="100">
+        <h2>YOGA</h2>
+        <p>The practice of Yoga is aimed at unifying individual consciousness with that of the universal, thereby
+          attaining perfect harmony between body and mind, man and Nature.</p>
+        <button type="button" class="btn btn-success" href="#"> Read more...</button>
+      </div><!-- /.col-lg-3 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="photo-1579126038374-6064e9370f0f.jfif" alt="Generic placeholder image"
+          width="140" height="100">
+        <h2>FITNESS</h2>
+        <p>Without a doubt, regular exercise can benefit your health, mind and body.We shall grow your fitness day by
+          day.Our trainers are available to show you what a functional workout should look like! It's included</p>
+        <button type="button" class="btn btn-success" href="#"> Read more...</button>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  &nbsp;
+    <footer class="container footer">
+      <p class="float-right"><a href="#">Back to top </a></p>
+      <p>© 2020-2021 Canvasy, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+  
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
